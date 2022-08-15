@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+}
+
+body{
+  background: linear-gradient(rgb(101, 56, 8),rgb(37, 8, 3))
+}
+
+.sec00{
+  height: 100vh;
+}
+
+.main-title{
+  font-size: 5rem;
+  margin-bottom: 50px;
+  color: white;
+  line-height: 5rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.scroll-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px;
+  color: #ffffff;
+}
+
+.sec-title{
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.content{
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .image{
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.content .image img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.content .text-block{
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  max-width: 400px;
+  transform: translate(-100px,50px);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border-radius: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.content .text-block h3{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.foot-media-icon{
+  margin-top: 100px;
+}
+
+.foot-media-icon a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 50px;
+}
+
+/* section02 */
+
+.section-title{
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color:white;
+}
+
+.info-block{
+  margin-left: 50px;
+  width:700px;
+}
+
+.info-title{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* section03 */
+.menu{
+  width:400px;
+  margin-left: 50px;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu ul li{
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.menu ul li:not(:last-child){
+  margin-bottom: 65px;
+}
+
+.menu ul li:nth-child(1),.menu ul li:nth-child(5){
+  padding-left: 100px;
+}
+
+.menu ul li:nth-child(2),.menu ul li:nth-child(4){
+  padding-left: 50px;
+}
+
+.menu ul li a{
+  color: white;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.menu ul li a:hover{
+  color: saddlebrown;
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: initial;
+}

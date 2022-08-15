@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Coffee Scroll Reveal</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/49742b5fa5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="scroll-sec sec00">
+    <h1 class="main-title">
+      This is my Coffee Smaple Site
+    </h1>
+  </section>
+  <!-- section01 -->
+  <section class="scroll-sec sec01">
+    <div class="container">
+        <h2 class="sec-title">
+          Coffee Scroll Content Title
+        </h2>
+      
+      <div class="content">
+        <div class="image">
+          <img src="./img/img001.jpg" alt="">
+        </div>
+        <div class="text-block">
+          <h3>Scroll Block Title</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id magni quasi blanditiis eaque eveniet fugiat explicabo eligendi dolores similique illo. Sunt ex, iusto nulla tenetur odit sed cum sequi voluptatum dolore id neque aperiam doloremque. Modi, eum. Praesentium, pariatur dolore!</p>
+        </div>
+      </div>
+      <div class="foot-media-icon">
+        <a href="" class="icon">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="" class="icon">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="" class="icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="" class="icon">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section02 -->
+  <section class="scroll-sec sec02">
+    <div class="container">
+        <h2 class="section-title">
+          Coffee Info
+        </h2>
+      
+      <div class="content">
+        <div class="image">
+          <img src="./img/img002.jpg" alt="">
+        </div>
+        <div class="info-block">
+          <h3 class="info-title">Info Block Desctiption</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium architecto in odio nihil optio! Voluptatem quia odit, obcaecati repudiandae perferendis et nemo rerum reprehenderit eum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section03 -->
+  <section class="scroll-sec sec03">
+    <div class="container">
+        <h2 class="section-title">
+          Menu Ccontnet Title
+        </h2>
+      
+      <div class="content">
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-mug-saucer"></i>
+                Coffee Beans
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-person"></i>
+                About Me
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-seedling"></i>
+                How to grow Coffee
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-basket-shopping"></i>
+                How to get my Coffee
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-face-grin"></i>
+                Have Fun!!
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="./img/img003.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true ,distance: "50px",duration:2000,delay:200});
+
+    //main-title
+    ScrollReveal().reveal('.main-title', { delay: 700,duration:2000 ,origin: "top",distance:"200px" });
+
+    //section01
+    ScrollReveal().reveal('.sec01 .sec-title', { delay: 500 ,origin: "left",reset:false });
+    ScrollReveal().reveal('.sec01 .image', { delay: 600 ,origin: "bottom" });
+    ScrollReveal().reveal('.sec01 .text-block', { delay: 700 ,origin: "right" });
+    ScrollReveal().reveal('.sec01 .foot-media-icon i', { delay: 900 ,origin: "bottom",interval:200});
+
+    //section02
+    ScrollReveal().reveal('.sec02 .section-title', { delay: 200 ,origin: "top" });
+    ScrollReveal().reveal('.sec02 .image', { delay: 800 ,origin: "left" });
+    ScrollReveal().reveal('.sec02 .info-block', { delay: 500 ,origin: "bottom" });
+
+    //section03
+    ScrollReveal().reveal('.sec03 .section-title', { delay: 400 ,origin: "right" });
+    ScrollReveal().reveal('.sec03 .image', { delay: 600 ,origin: "bottom" });
+    ScrollReveal().reveal('.sec03 .menu li', { delay: 800 ,origin: "left",interval:300, distance:"100px" });
+  </script>
+
+  <footer>
+    ©️Y.sakaguchi PORTFOLIO
+  </footer>
+</body>
+</html>
